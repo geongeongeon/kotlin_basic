@@ -1,4 +1,4 @@
-import sub.Person
+package lec02
 
 fun main() {
     // null을 허용한 변수에서 null 확인을 안하고 값을 사용할 경우
@@ -9,7 +9,7 @@ fun main() {
     val str2: String? = "ABC"
     println(str2?.length ?: 0)
 
-    val person = Person("공부하는 개발자")
+    val person = Person("person")
     println(person.name)
 }
 

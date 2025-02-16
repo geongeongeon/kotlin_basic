@@ -1,3 +1,5 @@
+package lec01
+
 fun main() {
     // var : 수정 가능한 변수
     var number1: Long = 10L // 타입 생략 시 컴파일러가 자동으로 추론
@@ -12,4 +14,5 @@ fun main() {
     var number3: Long? = null
 
     // 객체 생성 시에 new 키워드를 붙이지 않음
+    val person: Person = Person("person")
 }
