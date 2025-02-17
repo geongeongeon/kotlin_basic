@@ -8,9 +8,6 @@ class Person constructor(val name: String, var age: Int) {
         return this.name.uppercase()
     }
 
-    val uppercaseName: String
-        get() = this.name.uppercase()
-
     init {
         if (age <= 0) {
             throw IllegalArgumentException("나이는 ${age}일 수 없습니다.")
@@ -27,12 +24,6 @@ class Person constructor(val name: String, var age: Int) {
         println("두번째 생성자")
     }
 
-    // 방법 1
-    fun isAdult(): Boolean {
-        return this.age >= 20
-    }
-
-    // 방법 2
     val isAdult: Boolean
         get() = this.age >= 20
 }
